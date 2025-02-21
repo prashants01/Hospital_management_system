@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        nav {
+            background-color: #005b9a;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #006bb3;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #004080;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            background-color: #004d99;
+            color: white;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 90%;
+            background: white;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #005b9a;
+            color: white;
+        }
+        button {
+            background-color: #006bb3;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #004080;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="static\hospital_logo.png" alt="Hospital">
+        <h1>Hospital Management System</h1>
+    </header>
+    <nav>
+        <a href="/patients">Manage Patients</a>
+        <a href="/doctors">Manage Doctors</a>
+        <a href="/logout">Logout</a>
+    </nav>
+    <main>
+        <h2>Welcome to the Hospital Management System</h2>
+        <p>Choose an option from the navigation menu to manage records.</p>
+    </main>
+    <footer>
+        &copy; 2024 Hospital Management System
+    </footer>
+</body>
+</html>
